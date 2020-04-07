@@ -79,7 +79,7 @@ const langParam = {
     Digit0: [0, ')'],
     Minus: ['-', '_'],
     Equal: ['=', '+'],
-    Backspace: ['Backspace', 'Backspace'],
+    Backspace: ['BackSp', 'BacksSp'],
     Tab: ['Tab', 'Tab'],
     KeyQ: ['й', 'Й'],
     KeyW: ['ц', 'Ц'],
