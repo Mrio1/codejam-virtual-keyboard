@@ -1,0 +1,90 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#textarea {
+    width: 1040px;
+    height: 250px;
+}
+.keyboard {
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    width: 1040px;
+    background-color: rgb(16, 8, 58);
+    border-radius: 20px;
+    box-shadow: 5px 10px rgba(9, 12, 207, 0.699);
+}
+
+.row {
+    margin: 5px 0;
+    display: flex;
+    
+}
+
+.key {
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(121, 119, 116);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(207, 178, 9);
+}
+
+.key-active {
+    transition: 
+        background-color 0.2s,
+        transform 0.1fs;
+    background-color: rgb(141, 150, 150);
+    transform: scale(0.95);
+    box-shadow: 5px 5px 5px black;
+}
+
+div {
+    &[data-code = 'CapsLock'] {
+        width: 100px;
+    }
+    &[data-code = 'ControlLeft'] {
+        width: 100px;
+    }
+    &[data-code = 'ControlRight'] {
+        width: 100px;
+    }
+    &[data-code = 'ShiftLeft'] {
+        width: 125px;
+    }
+    &[data-code = 'ShiftRight'] {
+        width: 125px;
+    }
+    &[data-code = 'Space'] {
+        width: 345px;
+    }
+    &[data-code = 'Tab'] {
+        width: 80px;
+    }
+    &[data-code = 'Enter'] {
+        width: 120px;
+    }
+    &[data-code = 'Backspace'] {
+        width: 80px;
+    }
+    &[data-code = 'AltLeft'] {
+        width: 90px;
+    }
+    &[data-code = 'AltRight'] {
+        width: 90px;
+    }
+    &[data-code = 'KeyW'], [data-code = 'KeyS'], [data-code = 'KeyA'], [data-code = 'KeyD'] {
+        box-shadow: 5px 5px 5px red;
+    }
+    &[data-code = 'Space'] {
+        box-shadow: 5px 5px 5px red;
+        &.key-active {
+            box-shadow: 5px 5px 5px yellow;
+        }
+    }
+}
